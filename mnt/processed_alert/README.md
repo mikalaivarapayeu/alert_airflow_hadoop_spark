@@ -1,0 +1,1 @@
+This is folder where csv files with errors are copied after alert emails has been sent.

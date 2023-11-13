@@ -1,0 +1,1 @@
+This is folder where data log files should be placed for processing

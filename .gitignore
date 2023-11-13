@@ -1,0 +1,12 @@
+mnt/data/data.csv
+mnt/processed_logs/data.csv
+spark_cluster.yaml
+.ipynb_checkpoints
+alert_spark.ipynb
+mnt/processed_alert/*.csv
+mnt/unprocessed_alert/*.csv
+.env
+hadoop/hadoop_*
+.idea/
+airflow/logs/*
+airflow/plugins/*
