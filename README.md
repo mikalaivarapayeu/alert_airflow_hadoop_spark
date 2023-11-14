@@ -10,9 +10,9 @@ Airflow sends emails, and error files are copied into /mnt/processed_alert folde
 Log files are moved into mnt/processed_log folder.
 
 ### Installation
-
-- _1. Clone the repository_
-- _2. In the root folder create the .env file with following environment variable:_
+- _1. Ensure that docker and docker compose are in stalled_
+- _2. Clone the repository_
+- _3. In the root folder create the .env file with following environment variables:_
 * * _AIRFLOW_UID=1000_
 * * _AIRFLOW__CORE__EXECUTOR=CeleryExecutor_
 * * _AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow_
@@ -37,3 +37,7 @@ Log files are moved into mnt/processed_log folder.
 * * _AIRFLOW_VAR_EMAIL_DEST=<'email where to sent alerts'>_
 
 Pay attention that for variables with <> one should provide user own values
+
+### Quick start
+
+After creating .env file simply from the alert folder in the terminal run command _**docker compose -f docker-compose.yaml up -d**_
